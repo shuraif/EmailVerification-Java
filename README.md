@@ -53,6 +53,11 @@ Sends an email with a verification token to confirm the user's email address.
 }  
 ```
 
+![Image Alt Text](https://raw.githubusercontent.com/shuraif/images/main/EmailVerification-Java/AccountConfirmation.png)
+![Image Alt Text](https://raw.githubusercontent.com/shuraif/images/main/EmailVerification-Java/AccountConfirmationSuccess.png)
+![Image Alt Text](https://raw.githubusercontent.com/shuraif/images/main/EmailVerification-Java/AccountConfirmationFailed.png)
+
+
 ### Verify Email
 
 Verifies the token from the confirmation email link.
