@@ -49,8 +49,7 @@ Sends an email with a verification token to confirm the user's email address.
   "tokenValue": "2SwCHjABNPb0Vb7yqeddLvmpZEubJwU7bV7cZ148FlxnOENQLrUvPOLLap22AxpvpIO68oL5PqibvHuG2zlpBXU3ILjuTAXjP07VJqBxjHRjp41huTdJg9PO",
   "createdOn": "2023-11-05T00:03:24.158",
   "expireOn": "2023-11-05T00:08:24.159",
-  "userName": "User",
-  "activationStatus": null
+  "userName": "User"
 }  
 ```
 
