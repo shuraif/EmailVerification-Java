@@ -1,4 +1,4 @@
-# Email Account Confirmation
+# Email Account Verification - Java
 
 This Spring Boot application demonstrates account confirmation through email.
 
