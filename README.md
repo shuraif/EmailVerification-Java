@@ -81,4 +81,3 @@ The H2 database configuration is also defined in \`application.properties\`.
 - Integrate with actual user registration flow
 - More robust error handling
 - Logging and monitoring
-```
