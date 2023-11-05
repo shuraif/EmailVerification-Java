@@ -6,6 +6,7 @@ import java.util.Base64;
 import javax.mail.internet.MimeMessage;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,6 +31,9 @@ public class MailService {
 
 	@Autowired
 	ResourceLoader resourceLoader;
+	
+	@Value(value = "spring.mail.username")
+	String fromAddress;
 
 	public ResponseEntity<ActivationToken> sendMail(SendMailRequest mailRequest) throws Exception {
 
@@ -62,7 +66,7 @@ public class MailService {
 			helper.setText(htmlContent, true);
 			helper.setTo(mailRequest.getToEmail());
 			helper.setSubject("Confirm Your Email Address");
-			helper.setFrom("expedireinnovations@gmail.com");
+			helper.setFrom(fromAddress);
 			mailSender.send(mimeMessage);
 
 		} catch (Exception e) {

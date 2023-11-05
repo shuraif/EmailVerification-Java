@@ -7,6 +7,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -23,6 +25,8 @@ public class ActivationToken {
 	LocalDateTime createdOn;
 	LocalDateTime expireOn;
 	String userName;
+	
+	@JsonIgnore
 	String activationStatus; 
 	
 }

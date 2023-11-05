@@ -5,16 +5,13 @@ import java.time.temporal.ChronoUnit;
 
 public class DateTimeUtil {
 
-    public static LocalDateTime addHoursToCurrentTime(Integer hoursToAdd) {
-       
-        LocalDateTime currentDateTime = LocalDateTime.now();
+	public static LocalDateTime addHoursToCurrentTime(Integer hoursToAdd) {
 
-        LocalDateTime newDateTime = currentDateTime.plus(hoursToAdd, ChronoUnit.MINUTES);
+		LocalDateTime currentDateTime = LocalDateTime.now();
 
-        System.out.println("Current Date and Time: " + currentDateTime);
-        System.out.println("Date and Time Plus " + hoursToAdd + " Hours: " + newDateTime);
-        
-        return newDateTime;
-    }
-    
+		LocalDateTime newDateTime = currentDateTime.plus(hoursToAdd, ChronoUnit.MINUTES);
+
+		return newDateTime;
+	}
+
 }
